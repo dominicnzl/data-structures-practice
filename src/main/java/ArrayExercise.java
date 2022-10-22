@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayExercise {
 
   public void arrayToUpperCase(String[] input) {
@@ -8,6 +10,7 @@ public class ArrayExercise {
 
   public void incrementArray(int[] input) {
     // Add code here to increment each element in the array by 1
+    Arrays.setAll(input, i -> input[i] + 1);
   }
 
 }
