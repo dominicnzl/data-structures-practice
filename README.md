@@ -10,6 +10,7 @@ List<String> synchronizedShoppingList=Collections.synchronizedList(shoppingList)
 ```
 
 * for stack: a `.pop()` on empty key will throw a `NoSuchElementException` whereas a `.poll()` will return `null`
+* Stack class is thread safe, Deque interface is not
 * an ArrayDeque is not synchronized, and is both a Stack and a Queue
 * for Queue: an `.add()` will throw an `IllegalStateException` if there is no space available whereas `.offer()` will
 only add if it is possible to do so
